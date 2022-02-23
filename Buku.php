@@ -40,8 +40,8 @@ $buku_saya->setIsbn(9872317652569);
 $buku_saya->setJudul("Pemrograman Web");
 $pinjam_buku_saya = $buku_saya->pinjam();
 echo "Judul Buku = ". $buku_saya->getJudul();
-echo "Penulis Buku = ". $buku_saya->getPenulis();
+echo "Nama Penulis Buku = ". $buku_saya->getPenulis();
 echo "ISBN = ". $buku_saya->getIsbn();
-echo "Tanggal Peminjaman = ". date('d-m-Y');
-echo "Tanggal Pengembalian = ". $pinjam_buku_saya;
+echo "Tanggal Peminjaman Buku = ". date('d-m-Y');
+echo "Tanggal Pengembalian Buku = ". $pinjam_buku_saya;
 

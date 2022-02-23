@@ -7,6 +7,7 @@ class Anggota{
 
     public function bergabung(){
         $tahun_bergabung = date('Y');
+        return $tahun_bergabung;
     }
 
     public function setNo_anggota($no_anggota_baru)

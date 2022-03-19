@@ -1,5 +1,5 @@
 <?php
-namespace App\Comsole;
+namespace App\Console;
 
 class System{
     private function reset(){

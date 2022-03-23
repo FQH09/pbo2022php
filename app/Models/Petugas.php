@@ -1,14 +1,14 @@
 <?php
-namespace App\Models;
+namespace app\models;
 
-require_once 'User.php';
+use App\Models\User;
 
 class Petugas extends User{
     public $nip;
     public $nama_lengkap;
     public $alamat;
 
-    public function __construct($userpetugas){
+    public function __construct(){
        $this->nip = 232435234324;
        $this->nama_lengkap = "Muhammad Faqih";
        $this->alamat = "Jl. H Paris 2";
@@ -21,5 +21,8 @@ class Petugas extends User{
         echo $this->_array['Alamat']. "<br>";
         var_dump($this->_array);
     }
-}
 
+    public function register(){
+        echo "Petugas tidak perlu register";
+    }
+}

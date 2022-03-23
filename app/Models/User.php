@@ -1,8 +1,8 @@
 <?php
-namespace App\Models;
-require_once 'core\model.php';
+namespace app\models;
+use Core\Model;
 
-class User extends \core\Model {
+class User extends \Core\Model {
     protected $id;
     protected $username;
     protected $password;
@@ -13,6 +13,6 @@ class User extends \core\Model {
     }
 
     public function register(){
-        echo "masukkan id, email dan password";
+        echo "Petugas tidak perlu register";
     }
 }

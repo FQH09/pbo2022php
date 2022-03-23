@@ -1,7 +1,7 @@
 <?php
 namespace App\Models;
 
-require_once 'User.php';
+use App\Models\User;
 
 class Anggota extends User{
     const PRIA = 1;
@@ -45,7 +45,7 @@ class Anggota extends User{
     {
         return $this->no_hp;
     }
-    public function daftarkan(){
+    public static function daftarkan(){
         echo "Anggota sudah terdaftar";
     }
   

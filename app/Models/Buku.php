@@ -1,7 +1,7 @@
 <?php
 namespace App\Models;
 
-require_once 'Aset.php';
+use App\Models\Aset;
 
 class Buku extends Aset{
     private $penulis;

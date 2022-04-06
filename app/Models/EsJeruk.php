@@ -2,8 +2,23 @@
 namespace App\Models;
 
 use Core\Minuman;
+use Core\Produk;
 
-class EsJeruk implements Minuman{
+class EsJeruk implements Minuman,Produk{
+    private $rasa;
+    private $harga;
+
+    public function setHarga($harga){
+        $this->harga =$harga;
+    }
+
+    public function getHarga(){
+        return $this->harga;
+    }
+
+    public function jual(){
+        echo "produk sudah terjual";
+    }
 
     public function setRasa($rasa){
         $this->rasa = $rasa;

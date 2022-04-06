@@ -2,10 +2,24 @@
 namespace App\Models;
 
 use Core\Minuman;
+use Core\Produk;
 
-class EsCendol implements Minuman{
+class EsCendol implements Minuman,Produk{
     private $rasa;
+    private $harga;
 
+    public function setHarga($harga){
+        $this->harga =$harga;
+    }
+
+    public function getHarga(){
+        return $this->harga;
+    }
+
+    public function jual(){
+        echo "produk belum terjual";
+    }
+    
     public function setRasa($rasa){
         $this->rasa = $rasa;
     }

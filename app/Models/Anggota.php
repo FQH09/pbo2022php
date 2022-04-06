@@ -11,8 +11,8 @@ class Anggota extends User{
     private $nama_anggota;
     private $no_hp;
 
-    public function __construct($nama_lengkap_baru, $no_hp_baru){
-        $this->nama_lengkap = $nama_lengkap_baru;
+    public function __construct($nama_anggota_baru, $no_hp_baru){
+        $this->nama_anggota = $nama_anggota_baru;
         $this->no_hp = $no_hp_baru;
     }
 
